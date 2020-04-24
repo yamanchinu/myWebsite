@@ -1,0 +1,45 @@
+<?php
+
+include 'scripts/PHPMailer-master/src/Exception.php';
+include 'scripts/PHPMailer-master/src/PHPMailer.php';
+include 'scripts/PHPMailer-master/src/SMTP.php';
+
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+
+$mail-> IsSMTP(); // enable SMTP
+
+$mail-> SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+
+$mail-> SMTPAuth = 'true'; // authentication enabled
+
+$mail-> SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+
+$mail-> Host = 'smtp.gmail.com';  //SMTP server address
+
+$mail-> Username = 'agrawalyaman6@gmail.com'; //It is your gmail address
+
+$mail-> Password = 'Repertoire1218#';
+
+$mail-> Port = 587; //465 for SMTPSecure = ssl
+
+$mail-> SetFrom('originalwebsite@yamanagrawal.com','Yaman Website');
+
+$mail-> addAddress('yaman.a@msystechnologies.com','Yaman');  //Receipient address
+
+$mail-> addReplyTo('originalwebsite@yamanagrawal.com','Yaman');
+
+$mail-> isHTML(true);
+
+$mail-> Subject = 'Sbm Goldoyl - Contact Us';
+
+$mail-> Body = '<p>User tried to contact you</p><br><p>Hello</p>';
+
+if (!$mail->send()) {
+     echo "Mailer Error: " . $mail->ErrorInfo;
+ } else {
+     echo "Message sent!";
+ }
+
+
+?>
+

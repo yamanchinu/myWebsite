@@ -1,0 +1,258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+button {
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    text-shadow: none;
+    color: #ffffff;
+    outline: none;
+}
+
+@font-face {
+	font-family: VollkornItalic;
+	src: url(../fonts/Vollkorn-Italic.ttf);
+}
+@font-face {
+    font-family: dual300;
+    src: url(../fonts/Dual-300.ttf);
+}
+
+body {
+	font-family: VollkornItalic;
+	font-size : 14px;
+	background: #CF4647;
+	text-align: center;
+	color: #ffffff;
+}
+#wrapper {
+	height: 100vh;
+    position: relative;
+    max-width: 100%;
+}
+header {
+	border-bottom: 1px solid #3C3245;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+#logoWrap{
+	border-right: 1px solid #3C3245;
+	padding: 0;
+}
+#logo{
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px 20px 20px 0;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+#mainBanner {
+	background: url(../images/banner_yum.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: inline-block;
+    width: 40%;
+    background-size: 90%;
+    background-position: 20px 0%;
+    transform: translateX(-74%) translateY(0%) rotate(12deg);
+}
+#bannerText {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-size: 2em;
+}
+
+.copyrightText {
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    margin: 0 10px 0 0;
+    width: 100%;
+    padding: 10px;
+    background: #CF4647;
+    text-align: right;
+    /* height: 34px; */
+    /* transform: translateY(-34px); */
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+footer {
+	padding: 20px 0;
+    border-top: 1px solid #ffff0030;
+}
+
+.videoContainer {
+	width: 600px;
+    height: 355px;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    top: 10vh;
+}
+.upCoverBar {
+	position: absolute;
+    width: 560px;
+    height: 40px;
+    background: #CF4647;
+}
+.upCover {
+	position: absolute;
+    top: 60px;
+    left: 0;
+    width: 240px;
+    height: 42px;
+    transform: translateX(-42px) translateY(-22px) rotate(-30deg);
+    background-color: #CF4647;
+	}
+.downCover {
+	position: absolute;
+    top: 310px;
+    right: 0;
+    width: 340px;
+    height: 42px;
+    transform: translateX(88px) translateY(-42px) rotate(-30deg);
+    background-color: #CF4647;
+}
+
+
+
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: -80px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: 100%;
+}
+#myCanvasContainer li a {
+    font-size: 30px;
+    font-family: font-file-82132;
+}
+.mainBannerImage {
+    height: 100vh;
+    background: #000000;
+    opacity: 0.8;
+}
+#myCanvasContainer{
+    height: 500px;
+    margin-top: 40px;
+}
+.introduction {
+    padding: 110px 60px;
+    text-align: left;
+    font-family: Open Sans,sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 55px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: dual300;
+}
+p.webFlow {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 45px 0 32px 0;
+    margin-bottom: 20px;
+    font-family: dual300,Open Sans,sans-serif;
+}
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 18px 26px;
+    border-radius: 3px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.btn.btn-freelance {
+    background: #CF4647;
+}
+.btn.btn-hire {
+    background: hsla(0,0%,100%,.14);
+}
+.btn:hover {
+    color: #ffffff;
+}
+.buildWebsitePageWrap {
+    background-color: #290E0E
+}
+.buildWebsitePage {
+    background: #CF4647;
+    text-align: center;
+    height: 100vh;
+}
+p.inspirationTxt {    
+    text-align: center;
+    margin-top: 80px;
+}
+p.inspirationTxt u {
+    display: block;
+}
